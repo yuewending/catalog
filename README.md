@@ -9,7 +9,7 @@
 
  1. In a Terminal, run `bin/setup`.
  1. Run Project and visit your app in Chrome.
- 1. You may be prompted to run the `bin/whitelist` command each time your IP address/location changes; copy-paste it into a terminal prompt if so.
+ 1. You may be prompted to run a different `bin/whitelist XXX.XXX.XXX.XXX` command each time your IP address/location changes; copy-paste it into a terminal prompt if so.
  1. **Enable Auto-save and refresh Cloud9.**
  1. Check your progress/submit your work with `rails grade:all` as usual.
 
