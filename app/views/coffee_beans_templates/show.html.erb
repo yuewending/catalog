@@ -1,0 +1,34 @@
+<h1>
+  Coffee bean #<%= @coffee_bean.id %> details
+</h1>
+
+<a href="/coffee_beans/<%= @coffee_bean.id %>/edit">
+  Edit coffee bean
+</a>
+
+<hr>
+
+<dl>
+  <dt>Blend name</dt>
+  <dd><%= @coffee_bean.blend_name %></dd>
+
+  <dt>Origin</dt>
+  <dd><%= @coffee_bean.origin %></dd>
+
+  <dt>Variety</dt>
+  <dd><%= @coffee_bean.variety %></dd>
+
+  <dt>Notes</dt>
+  <dd><%= @coffee_bean.notes %></dd>
+
+</dl>
+
+<a href="/delete_coffee_bean/<%= @coffee_bean.id %>" class="btn btn-default">
+  Delete coffee bean
+</a>
+
+<hr>
+
+<a href="/coffee_beans">
+  Go back
+</a>

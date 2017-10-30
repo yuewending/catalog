@@ -1,0 +1,58 @@
+<h1>
+  All coffee beans
+</h1>
+
+<a href="/coffee_beans/new">
+  Add a new coffee bean
+</a>
+
+<hr>
+
+<table class="table">
+  <tr>
+    <th>
+      Blend name
+    </th>
+
+    <th>
+      Origin
+    </th>
+
+    <th>
+      Variety
+    </th>
+
+    <th>
+      Notes
+    </th>
+
+    <th>
+    </th>
+  </tr>
+
+  <% @coffee_beans.each do |coffee_bean| %>
+  <tr>
+    <td>
+      <%= coffee_bean.blend_name %>
+    </td>
+
+    <td>
+      <%= coffee_bean.origin %>
+    </td>
+
+    <td>
+      <%= coffee_bean.variety %>
+    </td>
+
+    <td>
+      <%= coffee_bean.notes %>
+    </td>
+
+    <td>
+      <a href="/coffee_beans/<%= coffee_bean.id %>">
+        Show details
+      </a>
+    </td>
+  </tr>
+  <% end %>
+</table>

@@ -1,0 +1,58 @@
+<h1>
+  All foods
+</h1>
+
+<a href="/foods/new">
+  Add a new food
+</a>
+
+<hr>
+
+<table class="table">
+  <tr>
+    <th>
+      Ingredient
+    </th>
+
+    <th>
+      Spice
+    </th>
+
+    <th>
+      Measurement
+    </th>
+
+    <th>
+      Store Address
+    </th>
+
+    <th>
+    </th>
+  </tr>
+
+  <% @foods.each do |food| %>
+  <tr>
+    <td>
+      <%= food.ingredient %>
+    </td>
+
+    <td>
+      <%= food.spice %>
+    </td>
+
+    <td>
+      <%= food.measurement %>
+    </td>
+
+    <td>
+      <%= food.store_address %>
+    </td>
+
+    <td>
+      <a href="/foods/<%= food.id %>">
+        Show details
+      </a>
+    </td>
+  </tr>
+  <% end %>
+</table>
