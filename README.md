@@ -7,7 +7,7 @@
  1. In a Terminal, run `bin/setup`.
  1. Run Project and visit your app in Chrome.
  1. Enable Auto-save and refresh Cloud9.
- 1. Save and submit your work using the [Continuous Integration](https://guides.firstdraft.com/continuous-integration.html) workflow.
+ 1. Check your progress/submit your work with `rails grade:all` as usual.
 
 > If at any point `rspec` fails with the message "Migrations are pending. To resolve this issue, run: bin/rake db:migrate RAILS_ENV=test" then run
 >
@@ -17,17 +17,14 @@
 
 You may refer to your notes, homeworks, the Ruby docs, GitHub, the forum, or anything else **except** for a live person (e.g., one of your classmates or a developer friend).
 
-Close/put away/don't use any messaging client, including but not limited to email, Slack, SMS, smart watches, walkie talkies, or vocal chords. If you're referring to videos, use headphones.
-
-You will have 90 minutes to complete the exam. If you finish early, you may leave the classroom and resume your messaging clients (i.e., talk amongst yourselves, email, etc). However, **you must sign out with me before you leave**.
+Close/put away/don't use any messaging client, including but not limited to email, Slack, SMS, smart watches, walkie talkies, or vocal chords.
 
 ## Hints
 
- - **Commit and push often**; in particular, after you complete a problem and before you start the next.
- - Open a Pull Request early, so that you can get a Build Report and hints.
+ - Use `/git` to **commit and branch often**; in particular, after you complete a problem and before you start the next.
  - Let Ruby's error messages guide you. They are trying to be helpful; they just have poor social skills. Try to make sense of their overly formal wording. The error pages also display helpful information like what controller and action were being routed to, and what was in the `params` hash.
  - Refer to your past work. This isn't a memorization competition.
- - **If you encounter an error that you think is environment or git related, ask for help right away; we’ll tell you if it’s something you should be figuring out on your own or not.** If it's HTML, Ruby, RCAV, params, or CRUD-related, we can't help; but we can tell you the difference.
+ - **If you encounter an error that you think is environment or git related, ask a Private question on Piazza; we’ll tell you if it’s something you should be figuring out on your own or not.** If it's HTML, Ruby, RCAV, params, or CRUD-related, we can't help; but we can tell you the difference.
  - You don’t have to worry about CSS styling at all; just get the app to do the right thing.
  - **Use the server log** to verify that URLs are being routed to the actions you think they are, and to see what is coming in to the `params` hash.
  - In your browser, don’t get confused between the target app and your development app. Make sure you are refreshing your own app to test your work.
@@ -83,11 +80,11 @@ All in all, you need to:
  - Build the Golden Seven for Lists from scratch. I've already generated the model for you, so you just have to do the RCAVs.
  - Some geocoding: On the show page for each food, display the correct latitude and longitude of the food based on the value in its `store_address` column. Currently, every food shows the same latitude and longitude, which is wrong. Use Google's Geocoding API.
 
-**For geocoding, start with the following API URL stub:**
+> In the unlikely case that you reach Google's Maps API free usage limit, use the following API URL stub:**
 
-    https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyB_nAWVr-18Oi_XoadzVHmNT2vevvJfev4&address=LOCATION GOES HERE
+> https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyB_nAWVr-18Oi_XoadzVHmNT2vevvJfev4&address=LOCATION GOES HERE
 
-If you don't use an API key, you might run into issues in case we reach Google's API free usage limit.
+> It contains my API token in one of the query string parameters, so should lift the limit.
 
 ---
 
