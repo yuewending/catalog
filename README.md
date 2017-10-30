@@ -4,9 +4,12 @@
 
  1. You should have gotten here by clicking the assignment from within Canvas.
  1. Setup [a Cloud9 workspace](https://guides.firstdraft.com/getting-started-with-cloud-9.html) as usual **with one exception**; choose "Private" rather than "Public". We're going to use our one and only Private workspace in Cloud9's free tier today.
+
+    If you already created a Private workspace in the past by accident, find it in your Cloud9 Dashboard (it will have a lock icon) and go into its Settings. Scroll to the bottom, and make the old one Public, then try creating catalog again as Private.
+
  1. In a Terminal, run `bin/setup`.
  1. Run Project and visit your app in Chrome.
- 1. You may be prompted to run the `bin/whitelist` command; copy-paste it into a terminal prompt if so.
+ 1. You may be prompted to run the `bin/whitelist` command each time your IP address/location changes; copy-paste it into a terminal prompt if so.
  1. **Enable Auto-save and refresh Cloud9.**
  1. Check your progress/submit your work with `rails grade:all` as usual.
 
