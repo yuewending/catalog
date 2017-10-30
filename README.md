@@ -6,7 +6,8 @@
  1. Setup [a Cloud9 workspace](https://guides.firstdraft.com/getting-started-with-cloud-9.html) as usual **with one exception**; choose "Private" rather than "Public". We're going to use our one and only Private workspace in Cloud9's free tier today.
  1. In a Terminal, run `bin/setup`.
  1. Run Project and visit your app in Chrome.
- 1. Enable Auto-save and refresh Cloud9.
+ 1. You may be prompted to run the `bin/whitelist` command; copy-paste it into a terminal prompt if so.
+ 1. **Enable Auto-save and refresh Cloud9.**
  1. Check your progress/submit your work with `rails grade:all` as usual.
 
 > If at any point `rspec` fails with the message "Migrations are pending. To resolve this issue, run: bin/rake db:migrate RAILS_ENV=test" then run
